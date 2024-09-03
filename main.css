@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+header {
+    background-color: #FFFFFF;
+    
+}
+
+.title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "TT Lakes";
+    padding: 16px;
+    margin: 0px;
+    color: #7E7E82;
+    font-weight: 300;
+    
+    
+}
+
+
+.main-menu__list {
+    padding: 0;
+    list-style-type:  none;
+    margin: 16px;
+    display: grid;   
+    margin-left: 16px;
+    
+}
+
+.swiper {
+    min-width: 0;
+}
+
+.main-menu__list::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    min-width: 0;
+  }
+
+.main-menu__element {
+    background-color: #FFFFFF;
+    width: 240px  !important;
+    height: 72px !important;
+    border-radius: 6px;
+    border: solid 1px #EAEAEA;
+    display: flex  !important;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+
+.main-menu__button {
+    background-image: url("icons/dropdown.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: solid 2px #FF3E79;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+}
+
+.main-menu__button:hover {
+    background-color: #ff000d;
+}
+
+.lenovo {
+    width: 108px;
+    height: 32px;
+}
+
+.samsung {
+    width: 116px;
+    height: 39px;
+}
+
+.apple {
+    width: 44px;
+    height: 44px;
+}
+
+.bosch {
+    width: 128px;
+    height: 29px;
+}
+
+.hp {
+    width: 52px;
+    height: 52px;
+}
+
+.acer {
+    width: 94px;
+    height: 24px;
+}
+
+.main-menu__gradient {
+    background: linear-gradient(to left, #F8F8F8 10%, transparent);
+    width: 24px;
+    height: 81px;
+    position: absolute;
+    right: 0px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px  !important;
+    height: 12px  !important;
+    background: #B5B6BC !important;
+    margin: 0px 6px !important; 
+}
+
+.swiper-pagination-horizontal {
+    position: static !important;
+}
+
+.more {
+    border: 0;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0;
+    margin-left: 24px;
+    display: none;
+}
+
+.more__img {
+    width: 24px;
+    height: 24px;
+    transition: 0.5s;
+}
+
+.more__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'TT Lakes';
+}
+
+
+.hide_img {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .main-menu__element {
+        width: 224px  !important;
+    }
+
+
+    .main-menu__list {
+        padding: 0;
+        list-style-type:  none;
+        margin: 16px 24px;
+        display: grid !important;   
+        row-gap: 16px;
+        column-gap: 24px;
+        grid-template-columns: 224px 224px 224px !important;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .more {
+        display: flex;
+    }
+    
+
+}
+
+@media (min-width: 1120px) {
+
+
+    .main-menu__element {
+        width: 240px  !important;
+    }
+    
+    .main-menu__list {
+        margin: 32px 24px;
+        column-gap: 32px;
+        grid-template-columns: 240px 240px 240px 240px !important;
+
+    }
+
+    .hidden {
+        display: flex !important;
+    }
+
+    .hidden-max {
+        display: none !important;
+    }
+
+}
